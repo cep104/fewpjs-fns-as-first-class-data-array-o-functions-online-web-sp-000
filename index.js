@@ -24,19 +24,19 @@ function unleashDog(name, dogbreed){
 
 let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
-function exerciseDog(name, dogbreed){ 
-  return routine.map(excercise => excercise(name, dogbreed)) 
-}
-
-
-// function exerciseDog(dogName, dogBreed) {
-//     let returnArray = [];
-    
-//     for ( let i = 0; i < routine.length; i++ ) {
-//         returnArray.push(routine[i](dogName, dogBreed));
-//     }
-//     return returnArray
+// function exerciseDog(name, dogbreed){ 
+//   return routine.map(excercise => excercise(name, dogbreed)) 
 // }
+
+
+function exerciseDog(dogName, dogBreed) {
+    let returnArray = [];
+    
+    for ( let i = 0; i < routine.length; i++ ) {
+        returnArray.push(routine[i](dogName, dogBreed));
+    }
+    return returnArray
+}
 
 
 // make sure to be passing in name and dogbreed
